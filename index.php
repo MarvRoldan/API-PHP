@@ -13,9 +13,26 @@ $randomMob = $randomMobObject;
 </head>
 <body>
     <h1>Information</h1>
+    <pre>
     <dl>
+        <dt></dt>
+        <dd><img src="<?php echo $randomMob->image_url; ?>"></dd>
         <dt>Title:</dt>
         <dd><?php echo $randomMob->title; ?></dd>
+        <dt>Episodes:</dt>
+        <dd><?php echo $randomMob->episodes; ?></dd>
+        <dt>Status:</dt>
+        <dd><?php echo $randomMob->status; ?></dd>
+        <dt>Aired:</dt>
+        <dd>
+            <?php echo $randomMob->aired->from; ?>
+            <?php echo $randomMob->aired->to; ?>
+        </dd>
+        <dt>Score:</dt>
+        <dd><?php echo $randomMob->score; ?></dd>
+        <dt>Synopsis:</dt>
+        <dd><?php echo $randomMob->synopsis; ?></dd>
     </dl>
+    </pre>
 </body>
 </html>
